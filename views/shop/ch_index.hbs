@@ -1,0 +1,16 @@
+<p> </p>
+<div class="card-columns">
+{{# each items }}
+  <div class="card text-center" >
+    <div class="card-body">
+      {{!-- src="images/ramen.jpg" --}}
+      <img class="card-img-top" src={{ this.pic }} alt="  Card image cap">
+      {{!-- innerhtml = Shin Ramyun Noodle Soup   4.2oz(120g) 4 Packs --}}
+      <h5 class="card-title">{{ this.name }}</h5>
+      {{!-- innerhtml = $5.00 --}}
+      <p class="card-text">{{ this.price }}</p>
+      <a href="#" class="btn btn-primary">Add to cart</a>
+    </div>
+  </div>
+{{/each}}
+</div>
